@@ -43,6 +43,7 @@ gulp.task('js', function() {
 
 gulp.task('fonts', function() {
     let paths = [
+        './src/fonts/*',
         './node_modules/font-awesome/fonts/*'
     ];
 
