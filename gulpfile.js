@@ -72,12 +72,12 @@ gulp.task('index', function() {
     let jsVendorStream = gulp.src(['assets/js/vendor/vendor.js'], {'cwd': __dirname + '/www/'}, {read: false});
     let jsStream       = gulp.src(['assets/js/*.js'], {'cwd': __dirname + '/www/'}, {read: false});
 
-    gulp.src(['./www/*.html'])
+    gulp.src(['./src/*.html'])
         .pipe(inject(series(styleStream, jsVendorStream, jsStream)))
-        .pipe(gulp.dest('./www'));
+        .pipe(gulp.dest('./src'));
 });
 
-gulp.task('build', ['less', 'js', 'vendor-js', 'fonts', 'include', 'image'])
+gulp.task('build', ['less', 'js', 'vendor-js', 'fonts', 'index', 'image', 'include'])
 
 gulp.task('server', function() {
     browserSync.init({
@@ -90,9 +90,7 @@ gulp.task('dev', function() {
         server: "./www/"
     });
 
-    // gulp.watch("app/scss/*.scss", ['sass']);
     gulp.watch('./src/less/**/*.less', ['less']).on('change', browserSync.reload);
     gulp.watch('./src/*.html', ['include']).on('change', browserSync.reload);
     gulp.watch('./src/js/*.js', ['js']).on('change', browserSync.reload);
-    gulp.start('index')
 });
