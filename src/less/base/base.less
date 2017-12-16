@@ -299,14 +299,7 @@ figure {
 #main {
     position: relative;
 
-    // .section {
-    //     border: 1px solid red;
-    // }
-
-
-    #how-works {
-        background-color: #0063f7;
-
+    .section {
         h2 {
             font-family: 'gotham-rounded', sans-serif;
             font-size: 38px;
@@ -315,6 +308,17 @@ figure {
             color: #ffffff;
             margin: 0 0 55px 0;
         }
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: @screen-md-min) {
+            h2 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    #how-works {
+        background-color: #0063f7;
 
         .box {
             display: block;
@@ -366,11 +370,48 @@ figure {
                 }
             }
         }
+    }
+
+    #register {
+        background-color: #009ef6;
+
+        form {
+            text-align: center;
+
+            input {
+                border-radius: 50px;
+                background-color: rgba(255, 255, 255, 0.26);
+                border: none;
+                padding: 15px 30px;
+                font-family: 'circular-std-book', sans-serif;
+                font-size: 22px;
+                text-align: left;
+                color: #ffffff;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            button.btn {
+                width: 60%;
+                padding: 15px 0;
+                border-radius: 50px;
+                background-color: #ffffff;
+                box-shadow: 0 2px 40px 0 rgba(255, 255, 255, 0.73);
+                border: solid 3px #ffffff;
+                font-family: 'circular-std-book', sans-serif;
+                font-size: 22px;
+                text-align: center;
+                color: #009ef6;
+            }
+        }
 
         /* Medium devices (desktops, 992px and up) */
         @media (min-width: @screen-md-min) {
-            h2 {
-                font-size: 48px;
+            form {
+                input,
+                button.btn {
+                    font-size: 26px;
+                }
             }
         }
     }
