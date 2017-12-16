@@ -308,4 +308,80 @@ figure {
 
 /* 2.3 - FOOTER
    ========================================================================== */
-#footer {}
+#footer {
+    padding: 160px 0 0 0;
+
+    .angled-edge {
+        background-color: #1e77e1;
+        height: 150px;
+        -webkit-clip-path: polygon(100% 40%,-50% 100%,100% 100%);
+        clip-path: polygon(100% 40%,-50% 100%,100% 100%);
+    }
+
+    nav {
+        margin: 20px 0;
+
+        h4 {
+            font-family: 'circular-std', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e77e1;
+        }
+
+        ul {
+            li {
+                margin: 15px 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    font-family: 'circular-std-book', sans-serif;
+                    font-size: 16px;
+                    color: #1e77e1;
+                }
+            }
+        }
+    }
+
+    #address-box {
+        margin-top: 30px;
+
+        figure {
+            text-align: center;
+
+            img { width: 50%;}
+        }
+
+        address {
+            font-family: 'circular-std', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            color: #a9a9a9;
+        }
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+        .angled-edge {
+            -webkit-clip-path: polygon(100% 30%,-40% 100%,100% 100%);
+            clip-path: polygon(100% 30%,-40% 100%,100% 100%);
+        }
+
+        #address-box {
+            figure {
+                img { width: 40%;}
+            }
+        }
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: @screen-md-min) {
+        #address-box {
+            figure {
+                img { width: 100%;}
+            }
+        }
+    }
+}
