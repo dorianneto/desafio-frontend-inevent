@@ -98,8 +98,126 @@ figure {
 
 /* 2.1 - HEADER
    ========================================================================== */
-#header {}
+#header {
+    background: url('../img/header-background.png') top center no-repeat;
+    height: 600px;
+
+    .navbar {
+        padding: 20px;
+
+        &.navbar-fixed-top {
+            position: relative;
+        }
+
+        .navbar-header {
+            .navbar-toggle {
+                background-color: #0043c7;
+
+                .icon-bar { background-color: #fff;}
+            }
+
+            .navbar-brand {
+                padding: 0;
+                height: auto;
+                display: block;
+
+                img {
+                    margin: 0px;
+                    padding: 0px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            ul {
+                background-color: #ececec;
+                text-align: center;
+
+                li {
+                    padding: 5px 0;
+
+                    a {
+                        font-family: 'circular-std-book', sans-serif;
+                        color: #0043c7;
+                        font-size: 18px;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+        padding-top: 160px;
+
+        .navbar {
+            padding: 0;
+            padding-top: 45px;
+
+            &.navbar-fixed-top {
+                position: fixed;
+            }
+
+            .navbar-collapse {
+                float: right;
+
+                ul {
+                    background-color: transparent;
+                    text-align: left;
+                    margin-top: 10px;
+
+                    li {
+                        padding: 0;
+                        margin: 0 5px;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: @screen-md-min) {
+        padding-top: 260px;
+
+        .navbar {
+            .navbar-collapse {
+                ul {
+                    li {
+                        a:hover {
+                            background-color: #ececec;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* 2.2 - MAIN
    ========================================================================== */
-#main {}
+#main {
+    // .section {
+    //     border: 1px solid red;
+    // }
+
+    // .container {
+    //     border: 1px solid blue;
+    // }
+}
+
+/* 2.3 - FOOTER
+   ========================================================================== */
+#footer {}
