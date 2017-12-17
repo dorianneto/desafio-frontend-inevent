@@ -372,6 +372,95 @@ figure {
         }
     }
 
+    #testimonials {
+        h2 {
+            color: #1e77e1;
+        }
+
+        .box {
+            position: relative;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 40px 0 rgba(30, 119, 225, 0.18);
+            padding: 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            figure {
+                text-align: center;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            p {
+                &.description {
+                    font-family: 'circular-std-book', sans-serif;
+                    font-size: 18px;
+                    color: #959595;
+                    margin: 0 0 25px 0;
+                }
+
+                &.title {
+                    font-family: 'circular-std', sans-serif;
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: #009ef6;
+
+                    span {
+                        font-family: 'circular-std-book', sans-serif;
+                        font-size: 14px;
+                        color: #aeaeae;
+                    }
+                }
+            }
+        }
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: @screen-lg-min) {
+            .box {
+                padding: 40px 30px 40px 80px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                width: 90%;
+                float: left;
+
+                figure {
+                    text-align: left;
+                    position: absolute;
+                    left: -70px;
+
+                    img {
+                        width: auto;
+                    }
+                }
+
+                // p {
+                //     &.description {
+                //         font-family: 'circular-std-book', sans-serif;
+                //         font-size: 18px;
+                //         color: #959595;
+                //         margin: 0 0 25px 0;
+                //     }
+
+                //     &.title {
+                //         font-family: 'circular-std', sans-serif;
+                //         font-size: 22px;
+                //         font-weight: bold;
+                //         color: #009ef6;
+
+                //         span {
+                //             font-family: 'circular-std-book', sans-serif;
+                //             font-size: 14px;
+                //             color: #aeaeae;
+                //         }
+                //     }
+                // }
+            }
+        }
+    }
+
     #register {
         background-color: #009ef6;
 
