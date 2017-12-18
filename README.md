@@ -19,8 +19,8 @@
 Siga os seguintes passos:
 
 1. `$ git clone https://github.com/dorianneto/desafio-frontend-inevent.git`
-1. `$ npm start`
-1. `$ npm build`
-1. `$ npm server` (para visualizar) ou `$ npm dev` (para desenvolver)
+1. `$ npm run start`
+1. `$ npm run build`
+1. `$ npm run server` (para visualizar) ou `$ npm run dev` (para desenvolver)
 
 Feito com :heart: por [@dorianneto](https://github.com/dorianneto)
