@@ -1,4 +1,5 @@
 # Desafio InEvent (Front-end)
+A tela finalizada pode ser visualizada através deste link: http://dorianneto.com.br/desafio-frontend-inevent/
 
 ## Stack
 
