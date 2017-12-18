@@ -55,6 +55,7 @@ gulp.task('vendor-js', function() {
     let paths = [
         './node_modules/jquery/dist/jquery.min.js',
         './node_modules/bootstrap/dist/js/bootstrap.min.js',
+        './node_modules/rellax/rellax.min.js'
     ];
 
     gulp.src(paths)

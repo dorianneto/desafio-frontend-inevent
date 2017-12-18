@@ -13,3 +13,5 @@ var App = {
 $(window).scroll(function () {
     App.headerManipulation();
 });
+
+var rellax = new Rellax('.rellax');

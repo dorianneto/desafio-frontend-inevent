@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="6.02491147e-16 33.9997 6.02491147e-16 0.4497 33.5506 0.4497 33.5506 33.9997"></polygon>
+    </defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-67.000000, -2787.000000)">
+        <g id="Group-9" transform="translate(67.000000, 2787.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-8"></g>
+            <path d="M33.5506,17.2247 C33.5506,26.4897 26.0406,33.9997 16.7756,33.9997 C7.5106,33.9997 -0.0004,26.4897 -0.0004,17.2247 C-0.0004,7.9597 7.5106,0.4497 16.7756,0.4497 C26.0406,0.4497 33.5506,7.9597 33.5506,17.2247" id="Fill-7" fill="#FEB81E" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
