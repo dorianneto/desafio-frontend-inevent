@@ -80,6 +80,14 @@ figure {
    ========================================================================== */
 .no-margin { margin: 0px !important;}
 .middle { vertical-align: middle !important;}
+.element-parallax { display: none;}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+    .element-parallax {
+        display: block;
+    }
+}
 
 /* 1.6 - BUTTONS
    ========================================================================== */
@@ -354,6 +362,7 @@ figure {
         background-color: #00d8f4;
         padding-top: 0px;
         padding-bottom: 0px;
+        z-index: 3;
 
         &:before {
             background: inherit;
@@ -404,6 +413,12 @@ figure {
         .container {
             position: relative;
             top: 60px;
+
+            .element-parallax {
+                position: absolute;
+                right: -30px;
+                bottom: 130px;
+            }
 
             .box {
                 display: block;
@@ -492,8 +507,38 @@ figure {
             color: #1e77e1;
         }
 
+        .parallax {
+            position: absolute;
+            top: 60px;
+            right: 0;
+
+            .element-parallax {
+                position: absolute;
+                right: 0;
+
+                &.shape-2 {
+                    right: 20px;
+                    top: 240px;
+                    z-index: 2;
+                }
+
+                &.shape-3 {
+                    z-index: 1;
+                    background-color: #0063f7;
+                    width: 200px;
+                    height: 160px;
+                    top: 220px;
+                    right: 30px;
+                    -webkit-clip-path: polygon(100% 0%,-50% 100%,100% 100%);
+                    clip-path: polygon(50% 0%,0% 100%,100% 100%);
+                    .rotate(-20deg)
+                }
+            }
+        }
+
         .box {
             position: relative;
+            z-index: 4;
             border-radius: 10px;
             background-color: #ffffff;
             box-shadow: 0 2px 40px 0 rgba(30, 119, 225, 0.18);
@@ -583,6 +628,68 @@ figure {
             transform-origin: 0 0;
         }
 
+        .parallax {
+            position: absolute;
+
+            &.top {
+                top: 0;
+            }
+
+            &.bottom {
+                right: 0;
+                bottom: 0;
+            }
+
+            .element-parallax {
+                position: absolute;
+
+                &.g2-shape-1 {
+                    top: -60px;
+                    left: 160px;
+                }
+
+                &.g2-shape-2 {
+                    top: -170px;
+                    left: 160px;
+                }
+
+                &.g2-shape-3 {
+                    top: -100px;
+                    left: 80px;
+                }
+
+                &.g2-shape-4 {
+                    top: 90px;
+                    left: 70px;
+                }
+
+                &.g2-shape-5 {
+                    top: -50px;
+                    left: 0px;
+                }
+
+                &.g3-shape-1 {
+                    right: 10px;
+                    bottom: 0px;
+                }
+
+                &.g3-shape-2 {
+                    right: 20px;
+                    bottom: 80px;
+                }
+
+                &.g3-shape-3 {
+                    right: 100px;
+                    bottom: 40px;
+                }
+
+                &.g3-shape-4 {
+                    right: 0px;
+                    bottom: -170px;
+                }
+            }
+        }
+
         form {
             text-align: center;
 
@@ -641,6 +748,35 @@ figure {
         position: absolute;
         right: 0;
         z-index: -1;
+    }
+
+    .element-parallax {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+
+        &.shape-1 {
+            bottom: -180px;
+            left: 40px;
+        }
+
+        &.shape-2 {
+            bottom: -40px;
+            left: 40px;
+        }
+
+        &.shape-3 {
+            z-index: 2;
+            background-color: #0063f7;
+            width: 130px;
+            height: 100px;
+            bottom: -120px;
+            left: -40px;
+            -webkit-clip-path: polygon(100% 0%,-50% 100%,100% 100%);
+            clip-path: polygon(50% 0%,0% 100%,100% 100%);
+            .rotate(-20deg)
+        }
     }
 
     .layer {
